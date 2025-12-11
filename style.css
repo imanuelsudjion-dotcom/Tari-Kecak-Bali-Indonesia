@@ -1,0 +1,44 @@
+// Particle Effect (Konfigurasi Langsung di JS)
+particlesJS('particles-js', {
+    particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: '#ff4500' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: false },
+        move: { enable: true, speed: 2, direction: 'none', random: true, straight: false, out_mode: 'out' }
+    },
+    interactivity: { detect_on: 'canvas', events: { onhover: { enable: false } } },
+    retina_detect: true
+});
+
+// Scroll Animation
+ScrollReveal().reveal('.hero-content', { delay: 200, distance: '50px', origin: 'bottom' });
+ScrollReveal().reveal('.gallery', { delay: 300, distance: '50px', origin: 'left' });
+ScrollReveal().reveal('.content-item', { delay: 200, distance: '50px', origin: 'bottom', interval: 100 });
+ScrollReveal().reveal('.map-card', { delay: 200, distance: '50px', origin: 'right' });
+
+// Audio Play
+document.getElementById('play-audio').addEventListener('click', function() {
+    const audio = document.getElementById('kecak-audio');
+    audio.play();
+});
+
+// Google Maps Link
+function openMap(location) {
+    const urls = {
+        'Uluwatu': 'https://www.google.com/maps/place/Uluwatu+Temple/@-8.8295,115.0841,15z',
+        'GWK': 'https://www.google.com/maps/place/Garuda+Wisnu+Kencana/@-8.8105,115.1671,15z',
+        'Batubulan': 'https://www.google.com/maps/place/Batubulan/@-8.575,115.283,15z'
+    };
+    window.open(urls[location], '_blank');
+}
+
+// Glitch on Hover (opsional tambahan)
+document.querySelector('.glitch').addEventListener('mouseenter', function() {
+    this.style.animationDuration = '0.1s';
+});
+document.querySelector('.glitch').addEventListener('mouseleave', function() {
+    this.style.animationDuration = '2s';
+});

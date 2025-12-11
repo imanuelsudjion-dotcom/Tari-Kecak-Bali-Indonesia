@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentasi Tari Kecak Bali</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">Tari Kecak Bali</h1>
+            <ul class="nav-menu">
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#content">Konten</a></li>
+                <li><a href="#maps">Lokasi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Budaya Kecak Bali">Budaya Kecak Bali</h1>
+            <p class="subheading">Jelajahi keindahan tari tradisional Bali yang penuh semangat dan filosofi.</p>
+            <button id="play-audio" class="play-btn">Play Audio Kecak</button>
+        </div>
+        <audio id="kecak-audio" loop>
+            <source src="audio/kecak.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung audio.
+        </audio>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Galeri Tari Kecak</h2>
+        <div class="gallery-grid">
+            <img src="img/kecak1.jpg" alt="Tari Kecak 1">
+            <img src="img/kecak2.jpg" alt="Tari Kecak 2">
+            <img src="img/kecak3.jpg" alt="Tari Kecak 3">
+        </div>
+    </section>
+
+    <section id="content" class="content">
+        <h2>Mengenal Tari Kecak Bali</h2>
+        <div class="content-grid">
+            <div class="content-item">
+                <h3>Struktur Pertunjukan</h3>
+                <p>Tari Kecak dimulai dengan formasi lingkaran penari pria yang mengeluarkan suara "cak-cak" seperti monyet. Cerita biasanya diambil dari Ramayana, dengan fokus pada pertarungan Rama melawan Rahwana.</p>
+            </div>
+            <div class="content-item">
+                <h3>Kostum & Properti</h3>
+                <p>Penari menggunakan kain poleng hitam-putih, tanpa topeng. Properti utama adalah api obor untuk suasana malam.</p>
+            </div>
+            <div class="content-item">
+                <h3>Musik & Ritme</h3>
+                <p>Musik berasal dari suara manusia (cak-cak) dan gamelan Bali. Ritme cepat dan dinamis, menciptakan atmosfer intens.</p>
+            </div>
+            <div class="content-item">
+                <h3>Koreografi</h3>
+                <p>Gerakan melibatkan lompatan, putaran, dan ekspresi wajah. Penari utama (Rama) bergerak lincah, sementara kelompok mendukung dengan suara.</p>
+            </div>
+            <div class="content-item">
+                <h3>Filosofi</h3>
+                <p>Melambangkan perjuangan baik melawan kejahatan. "Cak" berarti satu, menunjukkan kesatuan dan harmoni alam.</p>
+            </div>
+            <div class="content-item">
+                <h3>Fakta Menarik</h3>
+                <p>Diciptakan pada 1930-an oleh Wayan Limbak. Sekarang sering dipadukan dengan turis di Uluwatu.</p>
+            </div>
+            <div class="content-item">
+                <h3>Modernisasi & Festival</h3>
+                <p>Tari ini berkembang dengan festival internasional, seperti di Bali Arts Festival, dan adaptasi modern untuk panggung global.</p>
+            </div>
+            <div class="content-item">
+                <h3>Tips Menonton</h3>
+                <p>Tonton di malam hari untuk suasana terbaik. Duduk dekat untuk merasakan energi penari. Hindari gangguan agar tidak mengganggu ritme.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="maps" class="maps">
+        <h2>Lokasi Pertunjukan Tari Kecak</h2>
+        <div class="maps-grid">
+            <div class="map-card" onclick="openMap('Uluwatu')">
+                <h3>Uluwatu</h3>
+                <p>Pertunjukan malam di tebing laut, ikonik dan spektakuler.</p>
+            </div>
+            <div class="map-card" onclick="openMap('GWK')">
+                <h3>Garuda Wisnu Kencana (GWK)</h3>
+                <p>Di kompleks patung raksasa, dengan latar belakang megah.</p>
+            </div>
+            <div class="map-card" onclick="openMap('Batubulan')">
+                <h3>Batubulan</h3>
+                <p>Desa asal tari ini, pertunjukan tradisional dan autentik.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
